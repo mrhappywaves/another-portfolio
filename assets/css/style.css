@@ -1,0 +1,177 @@
+/* :root {
+
+} */
+
+body {
+    font-family: "Audiowide", sans-serif;
+}
+
+.nav-link {
+    color: white;
+}
+
+#home {
+    height: 92vh;
+    width: 100%;
+    background-image: url("../images/take2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1.0;
+    position: relative;
+    text-align: center;
+}
+
+.custom-hero,
+.custom-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-hero {
+    top: 50%;
+
+}
+
+.custom-heading,
+.lead {
+    font-weight: bold;
+    color: rgb(9, 24, 41);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px burlywood, 0 0 20px burlywood, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 50px skyblue, 0 0 60px white, 0 0 70px white;
+    }
+
+    to {
+        text-shadow: 0 0 20px burlywood, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 50px skyblue, 0 0 60px skyblue, 0 0 70px skyblue, 0 0 80px skyblue;
+    }
+}
+
+.custom-button {
+    bottom: 0;
+}
+
+#about-me,
+#my-contacts,
+footer {
+    background-image: linear-gradient(to left top, #140223, #380e2f, #5d1630, #7a2a28, #8b4818);
+}
+
+#about-me,
+#my-projects {
+    height: 100vh;
+}
+
+#about-me,
+#my-contacts {
+    color: white
+}
+
+.profile-image {
+    position: relative;
+    width: 300px;
+    border-radius: 25px;
+    margin: 200px 100px;
+}
+
+.right-content {
+    padding-right: 100px; 
+    margin-top: 100px;
+}
+
+#about-me p {
+    font-size: 17px;
+}
+
+.resume,
+.projects {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.row {
+    --bs-gutter-x: unset;
+}
+
+.btn:hover, 
+.nav-link:focus, 
+.nav-link:hover,
+footer a:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+}
+
+#my-contacts {
+    padding: 50px;
+}
+
+.header img {
+    float: left;
+    width: 64px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: white; 
+}
+
+@media screen and (max-width: 1440px) {
+    #about-me,
+    #my-projects {
+    height: initial;
+    }
+    
+    .right-content {
+        padding-right: 20px; 
+        padding-bottom: 20px;
+    }
+
+    .profile-image {
+        position: initial;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    h2 {
+        text-align: center;
+    }
+
+    .right-content {
+        padding: 20px; 
+        margin-top: 20px;
+    }
+
+    .profile-image {
+        border-radius: initial;
+        margin: initial; 
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding-top: 50px;   
+    }
+
+    .carousel-item img {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .btn {
+        margin: 5px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
